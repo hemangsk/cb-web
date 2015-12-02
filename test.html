@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<script type="text/javascript">
+function change()
+{
+    if(document.getElementById("myButton1").value=="Edit"){
+        document.getElementById("myButton1").remove();
+        
+        var input_myButton1 = document.createElement('input');
+   input_myButton1.type = "submit";
+   input_myButton1.id = "myButton1";
+   input_myButton1.value = "Save";
+   input_myButton1.onclick = change2;
+document.getElementById("f").appendChild( input_myButton1 );
+        
+        
+         
+var input_0 = document.createElement('input');
+   input_0.type = "\&quot;text\&quot;";
+        input_0.value = "";
+        input_0.id="yoyo";
+document.getElementById("results").appendChild( input_0 );
+
+
+    }
+    else if( document.getElementById("myButton1").value=="Save" ){
+        
+        var fn = document.getElementById("yoyo").value;
+        console.log(fn);
+        document.getElementById("result").innerHTML = fn;
+
+
+    }
+   
+    
+    
+   
+    
+}
+    
+function change2(){
+    
+    
+    var fn = document.getElementById("yoyo").value;
+        console.log(fn);
+        document.getElementById("result").innerHTML = fn;
+    var hiddenElement = document.createElement('a');
+
+        hiddenElement.href = 'data:attachment/text,' + encodeURI(fn);
+        hiddenElement.target = '_blank';
+        hiddenElement.download = 'myFile.txt';
+        hiddenElement.click();
+}
+ 
+    
+</script>
+</head>
+
+<input onclick="change()" type="button" value="Edit" id="myButton1" />
+    <div id="f"></div>
+    <div id="results" class="results"></div>
+    <div id="result"></div>
+   
+
+
+
+</html>
