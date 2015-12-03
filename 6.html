@@ -21,6 +21,9 @@ localStorage.userEdits = userVersion;
 
 
 document.getElementById("update").innerHTML="Edits saved!";
+    var editElem = document.getElementById("edit");
+    editElem.contentEditable="false";
+    document.getElementById("myButton1").value="Edit";
 
 }
 function checkEdits() {

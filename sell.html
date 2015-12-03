@@ -1,86 +1,199 @@
-<html><head>
-    
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <html><head>
+          <!--Import Google Icon Font-->
+          <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
           <!--Import materialize.css-->
               <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
 
           <!--Let browser know website is optimized for mobile-->
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+
+        <style type="text/css">
+            .site-title{
+
+                margin-bottom: 50px;
+                text-transform: uppercase;
+            }
+            .site-title-the{
+                margin-top: 100px;
 
 
-    
-    </head>
-<body><center>
-     <div class="row">
-        <div style="align-content: center; margin-left: 20%; padding: 90px; margin-top: 4%;" class="col s1 m7 ">
-          <div class="card">
-            <div class="card-image">
-              
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-                         <div class="row">
-                <form class="col s12">
-                  <div class="row">
-                    <div class="input-field col s6">
-                      <input id="first_name" class="validate" type="text">
-                      <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input id="last_name" class="validate" type="text">
-                      <label for="last_name">Last Name</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s6">
-                      <input id="first_name" class="validate" type="text">
-                      <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input id="last_name" class="validate" type="text">
-                      <label for="last_name">Last Name</label>
-                    </div>
-                  </div>
-                 
-                  <div class="row">
-                    <div class="input-field col s6">
-                      <input id="first_name" class="validate" type="text">
-                      <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input id="last_name" class="validate" type="text">
-                      <label for="last_name">Last Name</label>
-                    </div>
-                  </div>
-                 
-                 
-                </form>
-              </div>
-                        </div>
-            <div class="card-action">
-                 
-                 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
-                </button>
-                
-                 
-                 <button class="btn waves-effect waves-light" type="submit" name="action">Cancel
-               
-                </button>
-                
-            </div>
-              
-          </div>
+            }
+
+            .btn-large{
+                font-family: "Keep Calm" !important;
+                font-size: 20px !important;
+            }
+            
+            
+            .fa{
+                color: red;
+            }
+            a:active,a:hover{
+                color: crimson !important;
+            }
+            
+            html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	background:#ededed;
+	padding:10px;
+}
+#content {
+	padding-bottom:100px; /* Height of the footer element */
+}
+#footer {
+	background:transparent;
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+        </style>
+        </head>
+
+        <body>
+          <!--Import jQuery before materialize.js-->
+<div id="wrapper">
+    <div id="content">
+      <nav>
+        <div class="nav-wrapper">
+
+          <ul style="font-family:'Keep Calm';"id="nav-mobile" class="brand-logo center hide-on-med-and-down">
+          <li><a href="sass.html">HOME</a></li>
+            <li><a href="badges.html">INSIDE CB</a></li>
+            <li><a href="collapsible.html">ABOUT</a></li>
+
+             </ul>
+
         </div>
-      </div>
+      </nav>
+    
+        <div class="container">
+            <div class="row">
+            
+                <div class="col s4">
+                  <div class="row">
+                        <div class="col s11">
+                          <div class="card white darken-1">
+                            <div style="font-size:14px;"class="card-content black-text">
+                              <span style="font-size: 20px; font-family: &quot;Source Sans Pro&quot;; font-style: normal; font-weight: 600;" class="card-title">THE FIRST THING</span>
+                              <p>You can either sell, or generously giveaway.</p>
+                            </div>
+                            
+                          </div>
+                        </div>
+                  </div>
+                  
+                    <div class="row">
+                        <div class="col s11">
+                          <div class="card white darken-1">
+                            <div style="font-size:14px;"class="card-content black-text">
+                              <span style="font-size: 20px; font-family: &quot;Source Sans Pro&quot;; font-style: normal; font-weight: 600;"  class="card-title">STEP ONE</span>
+                              <p>Login by using Google or Facebook or Register@TCB</p>
+                            </div>
+                            
+                          </div>
+                        </div>
+                  </div>
+                
+                    <div class="row">
+                        <div class="col s11">
+                          <div class="card white darken-1">
+                            <div style="font-size:14px;"class="card-content black-text">
+                              <span style="font-size: 20px; font-family: &quot;Source Sans Pro&quot;; font-style: normal; font-weight: 600;"  class="card-title">STEP TWO</span>
+                              <p>We will get in touch with you for verification. After the verfication is complete, the classifieds will be posted on website.</p>
+                            </div>
+                            
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="col s4">
+                     
+                    <div class="row">
+                            <form class="col s12">
+                              <div class="row">
+                                <div class="input-field col s6">
+                                  <input id="first_name" type="text" class="validate">
+                                  <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                  <input id="last_name" type="text" class="validate">
+                                  <label for="last_name">Last Name</label>
+                                </div>
+                              </div>
+                               <div class="row">
+                                <div class="input-field col s6">
+                                  <input  id="first_name" type="text" class="validate">
+                                  <label for="first_name">College</label>
+                                </div>
+                                <div class="input-field col s6">
+                                  <input id="last_name" type="text" class="validate">
+                                  <label for="last_name">Contact Number</label>
+                                </div>
+                                </div>
+                                
+                                 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+                            </form>
+                    </div>
+                
+                
+                
+                </div>
+                
+                <div style="font-size:30px;font-family:'Keep Calm';"class="col s1"> <br>OR </div>
+                <div class="col s3"></div>
+            
+            </div>
+        
+        </div>
+        
+        
+        
+    </div>
+    
+    <div id="footer">
+        
+        <footer>
+            
+            <div class="container">
+                <div class="row">
+                
+              <center>  <div class="col s6">
+                     &copy 2015 The Campus Bazaar 
+                    </div>
+                    
+                    <div class="col s6">
+                    
+                     Made with <i class="fa fa-heart"></i> by Team CB
+                    </div>
+                
+                </div>
     
     
-    
-    
-    
-    
+    </div>
+            </footer>
 
-    
-     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		</div>
+     
+            </div>
+            
+            
+        
+    </body>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
           <script type="text/javascript" src="js/materialize.min.js"></script>
-</center><div class="hiddendiv common"></div></body></html>
+</html>

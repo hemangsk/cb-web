@@ -6729,7 +6729,7 @@ input[type=text]+label:after,input[type=password]+label:after,input[type=email]+
 	margin-top:1rem
 }
 .input-field label {
-	color:#9e9e9e;
+	color:crimson;
 	position:absolute;
 	top:0.8rem;
 	left:0.75rem;
